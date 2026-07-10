@@ -5,4 +5,5 @@
 - **Claude Code 运行位置**: Windows 端（platform: win32）
 - **Shell**: MINGW64（Git Bash），/bin/bash.exe
 - **工作目录**: `\\wsl.localhost\Ubuntu-22.04\home\czx\force-contrl-rl`（通过 WSL 网络路径访问）
-- **命令执行**: shell 在 Windows 端，如需在 WSL 内执行命令需通过 `wsl` 前缀
+- **命令执行**: shell 在 Windows 端，所有本地文件路径必须用 `//wsl.localhost/Ubuntu-22.04/...` 格式，**不要用** `/home/czx/...`（这会报 No such file or directory）
+- **WSL 命令**: 如需在 WSL 内执行命令需通过 `wsl` 前缀，但优先使用 `cd "//wsl.localhost/..." && command` 模式
