@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# PyTorch / RL checkpoints
+*.pt
+*.pth
+*.onnx
+!model_export.py
+
+# ROS2 build
+build/
+install/
+log/
+*.msg
+*.srv
+
+# MuJoCo
+*.mjb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Experiments (checkpoints in subdirs keep structure)
+experiments/checkpoints/*
+experiments/tensorboard/*
+experiments/videos/*
+experiments/results/*
+!experiments/checkpoints/.gitkeep
+!experiments/tensorboard/.gitkeep
+!experiments/videos/.gitkeep
+!experiments/results/.gitkeep
+
+# Config overrides
+configs/local_*
